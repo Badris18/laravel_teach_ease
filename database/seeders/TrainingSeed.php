@@ -14,15 +14,15 @@ class TrainingSeed extends Seeder
     public function run(): void
     {
         $trainings = [
-            ['name' => 'TNPSC'],
-            ['name' => 'IBPS'],
-            ['name' => 'TNEB'],
-            ['name' => 'CLERK'],
-            ['name' => 'RRB'],
+            ['heading' => 'TNPSC'],
+            ['heading' => 'IBPS'],
+            ['heading' => 'TNEB'],
+            ['heading' => 'CLERK'],
+            ['heading' => 'RRB'],
         ];
 
         foreach ($trainings as $row) {
-            Training::create($training);
+            Training::create($row);
         }
     }
 }
