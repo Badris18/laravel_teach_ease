@@ -9,5 +9,9 @@ class PaperPublication extends Model
 {
     use HasFactory;
 
-    pro
+    protected $fillable = [
+
+        'user_id',
+        'pdf_path'
+    ];
 }
