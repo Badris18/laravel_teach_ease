@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('paper_publications', function (Blueprint $table) {
             $table->id();
+
+            $table->unsignedBigInteger('user_id');
+
+            $table->string('pdf_path')->nullable();
+
+
             $table->timestamps();
         });
     }
